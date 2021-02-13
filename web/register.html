@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Teacher Registration Page</title>
+        <style>
+            body 
+            { 
+                width: 100%;
+                height: 100%;
+                font-family: 'Open Sans', sans-serif;
+                background: #092756;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 1.2px;
+                background: linear-gradient(#4ca1af,#c4e0e5);
+                overflow: hidden;
+                color: white;
+            }
+            .register
+            { 
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                margin: -150px 0 0 -150px;
+                width: 400px;
+                height: 400px;
+            }
+            .btn-primary{ background-color: #4a77d4; }
+            .register h1 
+            { 
+                color: #fff; 
+                text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+                letter-spacing: 1px; 
+                text-align: center; 
+            }
+            input { 
+                width: 100%; 
+                margin-bottom: 10px; 
+                background: rgba(0,0,0,0.3);
+                border: none;
+                outline: none;
+                padding: 10px;
+                font-size: 13px;
+                color: #fff;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+                border: 1px solid rgba(0,0,0,0.3);
+                border-radius: 4px;
+            }
+            ::placeholder{ color:white };
+            .topnav 
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav .nav-item 
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 18px 24px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            .button 
+            {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 5px;
+            }
+            .topnav .nav-item:hover 
+            {
+                background-color: #ddd;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="nav-item" href="login.html">Login</a>
+            <a class="nav-item" href="show_result.html">Show Result</a>
+            <a style="float:right;" class="nav-item" href="AdminServlet">Admin Page</a>
+        </div>
+        <div class="register">
+            <form action="RegisterServlet" method="post">
+                <h1>Teacher Registration Page</h1>
+                <input placeholder="Teacher Name" type="text" name="teacher_name" required/><br>
+                <input placeholder="Teacher Email" type="email" name="teacher_email" required/><br>
+                <input type="password" placeholder="Teacher Password" name="teacher_password" required/><br>
+                <input type="text" placeholder="Teacher College Name" name="teacher_college_name" required/><br>
+                <input type="submit" class="btn-primary" value="Register"/><br>
+                If Already Have A Account <a href="login.html" style="text-decoration: none;">Login Here</a>
+            </form>
+        </div>
+    </body>
+</html>

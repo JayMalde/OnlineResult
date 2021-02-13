@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Add Student Page</title>
+        <style>
+            body 
+            { 
+                width: 100%;
+                height: 100%;
+                font-family: 'Open Sans', sans-serif;
+                background: #092756;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 1.2px;
+                background: linear-gradient(#4ca1af,#c4e0e5);
+                overflow: hidden;
+                color: white;
+            }
+            .container
+            { 
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                margin: -100px 0 0 -150px;
+                width: 400px;
+                height: 400px;
+            }
+            a:link, a:visited 
+            {
+                width: 90%;
+                background-color: #0D865D;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 6px;
+            }
+            input[type=submit]{ background-color: #4a77d4; }
+            .container h1 
+            { 
+                color: #fff; 
+                text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+                letter-spacing: 1px; 
+                text-align: center; 
+            }
+            input 
+            { 
+                width: 100%; 
+                margin-bottom: 10px; 
+                background: rgba(0,0,0,0.3);
+                border: none;
+                outline: none;
+                padding: 10px;
+                font-size: 13px;
+                color: #fff;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+                border: 1px solid rgba(0,0,0,0.3);
+                border-radius: 4px;
+            }
+            .label{ color: black; }
+            ::placeholder{ color: white };
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="AddStudent" method="post">
+                <label>Student Seat No :</label><input type="text" name="student_seatno"/><br>
+                <label>Student Name:</label><input type="text" name="student_name"/><br>
+                <label>Subject 1 Marks :</label><input type="number" name="subject_1_marks"/><br>
+                <label>Subject 2 Marks :</label><input type="number" name="subject_2_marks"/><br>
+                <label>Subject 3 Marks :</label><input type="number" name="subject_3_marks"/><br>
+                <label>Subject 4 Marks :</label><input type="number" name="subject_4_marks"/><br>
+                <label>Subject 5 Marks :</label><input type="number" name="subject_5_marks"/><br>
+                <input type="submit" value="Add Student"/>
+            </form>
+            <a href="AdminServlet">Go Back</a>
+        </div>
+    </body>
+</html>
